@@ -5,12 +5,15 @@ import java.util.ArrayList;
 public class Quizz {
     private String question;
     private ArrayList<String> reponses;
-    private int correctAnswerIndex;
+    // @attribute si il y a plusieurs reponses concatener les
+    private String correctAnswer;
+    private QuestionType type;
 
-    public Quizz(String question, ArrayList<String> reponses, int correctAnswerIndex) {
+    public Quizz(String question, ArrayList<String> reponses, String correctAnswer, QuestionType type) {
         this.question = question;
         this.reponses = reponses;
-        this.correctAnswerIndex = correctAnswerIndex;
+        this.correctAnswer = correctAnswer;
+        this.type = type;
     }
 
     public String getQuestion() {
@@ -29,11 +32,19 @@ public class Quizz {
         this.reponses = reponses;
     }
 
-    public int getCorrectAnswerIndex() {
-        return correctAnswerIndex;
+    public String getCorrectAnswer() {
+        return correctAnswer;
     }
 
-    public void setCorrectAnswerIndex(int correctAnswerIndex) {
-        this.correctAnswerIndex = correctAnswerIndex;
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
+    public QuestionType getType() {
+        return type;
+    }
+
+    public void setType(QuestionType type) {
+        this.type = type;
     }
 }

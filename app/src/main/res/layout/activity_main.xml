@@ -19,16 +19,12 @@
         android:textColor="#ffff"
         android:background="#19456b"/>
     <LinearLayout
+        android:id="@+id/reponse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/quizz_qst"
         android:padding="15dp"
         android:background="@drawable/think">
-        <RadioGroup
-            android:id="@+id/choice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </RadioGroup>
     </LinearLayout>
     <Button
         android:id="@+id/prev"
