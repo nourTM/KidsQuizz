@@ -270,15 +270,4 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-    private void saveResponse(){
-        if (quizz.get(currentQst).getType() == QuestionType.ONE) {
-
-        }else if (quizz.get(currentQst).getType() == QuestionType.MULTIPLE){
-
-        }else {
-            EditText input = findViewById((int)5);
-            reponses.put(currentQst,input.getText().toString());
-        }
-    }
 }
