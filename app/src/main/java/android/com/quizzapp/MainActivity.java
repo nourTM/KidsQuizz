@@ -205,7 +205,6 @@ public class MainActivity extends AppCompatActivity {
                 choice.setPadding(40, 40, 40, 40);
                 if(reponses.containsKey(currentQst)) {
                     String[] ss = reponses.get(currentQst).split(",");
-
                     for (String s: ss ) {
                         if(choice.getText().equals(s)) choice.setChecked(true);
                     }
