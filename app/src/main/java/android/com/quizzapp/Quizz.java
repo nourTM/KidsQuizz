@@ -20,31 +20,15 @@ public class Quizz {
         return question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
     public ArrayList<String> getReponses() {
         return reponses;
-    }
-
-    public void setReponses(ArrayList<String> reponses) {
-        this.reponses = reponses;
     }
 
     public String getCorrectAnswer() {
         return correctAnswer;
     }
 
-    public void setCorrectAnswer(String correctAnswer) {
-        this.correctAnswer = correctAnswer;
-    }
-
     public QuestionType getType() {
         return type;
-    }
-
-    public void setType(QuestionType type) {
-        this.type = type;
     }
 }
